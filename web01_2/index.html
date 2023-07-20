@@ -63,13 +63,11 @@
     <!-- 필요한 폰트를 로딩 : 구글 웹 폰트에서 폰트를 선택하여 해당 내용을 붙여 넣기 -->
     <link rel="stylesheet" href="google.css">
     <link rel="stylesheet" href="fonts.css">
-    <link rel="stylesheet" href="common.css">
-    <link rel="stylesheet" href="hd.css">
 
     <!-- 필요한 플러그인 연결 -->
     <script src="https://code.jquery.com/jquery-latest.js"></script>
-
-
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="hd.css">
     <style>
     /* 본문 영역 스타일 */  
     .contents { clear:both; }
@@ -83,9 +81,9 @@
     background-position:center center; background-size:cover; position:absolute;
     left: 0; top: 0; z-index:5; }
     .img_box li.active .bg_box { z-index:6; }
-    .img_box li.item1 .bg_box { background-image: url("./images/teaching-g030dadb60_1280.jpg"); }
-    .img_box li.item2 .bg_box { background-image: url("./images/kids-gcf22d3895_1920.jpg"); }
-    .img_box li .vs_tit { position:absolute; top:180px; left:100px; z-index:10;
+    .img_box li.item1 .bg_box { background-image: url("./images/kids_1.jpg"); }
+    .img_box li.item2 .bg_box { background-image: url("./images/kids_2.jpg"); }
+    .img_box li .vs_tit { position:absolute; top:355px; left:100px; z-index:10;
     font-weight: 300; font-size: 60px; line-height: 1.3; }
     .img_box li .vs_tit strong { font-weight: 500; }
 
@@ -124,10 +122,10 @@ border-radius:50%; }
     .pic_lst li a { display:block; width: 256px; height: 376px; margin: 11px; 
         border:1px solid #fff; color:#fff; }
     .pic_lst li:last-child { margin-right: 0; }
-    .pic_lst li.item1 { background-image: url("./images/img_social_main01.jpg"); }
-    .pic_lst li.item2 { background-image: url("./images/img_social_main02.jpg"); }
-    .pic_lst li.item3 { background-image: url("./images/img_social_main03.jpg"); }
-    .pic_lst li.item4 { background-image: url("./images/img_social_main04.jpg"); }
+    .pic_lst li.item1 { background-image: url("./images/children1.jpg"); }
+    .pic_lst li.item2 { background-image: url("./images/students1.jpg"); }
+    .pic_lst li.item3 { background-image: url("./images/lecture2.jpg"); }
+    .pic_lst li.item4 { background-image: url("./images/friend1.jpg"); }
     .pic_com { padding-left: 20px; padding-top: 20px; font-size:14px; }
     .pic_tit { padding-left: 20px; padding-top: 20px; font-size:18px; }
     .pic_arrow { display:block; width:110px; height:10px; border-bottom:1px solid #fff; 
@@ -189,9 +187,6 @@ position:absolute; right:0; top: 0; border-bottom:1px solid #fff; transform-orig
     .sl-btn-box .btn.prev { top:148px; }
     </style>
 
-
-
-    <link rel="stylesheet" href="login.html">
     <link rel="stylesheet" href="ft.css">
 </head>
 <body>
@@ -202,7 +197,7 @@ position:absolute; right:0; top: 0; border-bottom:1px solid #fff; transform-orig
                     <ul class="menu">
                         <li><a href="login.html">로그인</a></li>
                         <li><a href="join.html">회원가입</a></li>
-                        <li><a href="map.html">오시는 길</a></li>
+                        <li><a href="map.html">오시는길</a></li>
                     </ul>
                 </nav>
             </div>
@@ -210,54 +205,49 @@ position:absolute; right:0; top: 0; border-bottom:1px solid #fff; transform-orig
                 <a href="index.html" class="logo">
                     <img src="./images/chunjae1.png" alt="천재IT교육센터 로고타입">
                 </a>
-                <!-- nav.gnb>ul.menu>li.item$*5>a.dp1{메인$}+(ul.sub>li*4>a{서브$$}) -->
                 <nav class="gnb">
                     <ul class="menu">
                         <li class="item1">
-                            <a href="company.html" class="dp1">천재 소개</a>
+                            <a href="company.html" class="dp1">회사소개</a>
                             <ul class="sub">
-                                <li><a href="company.html#com">기업 소개</a></li>
+                                <li><a href="company.html#com">회사개요</a></li>
                                 <li><a href="company.html#greet">인사말</a></li>
                                 <li><a href="company.html#history">연혁</a></li>
-                                <li><a href="company.html#ci">CI</a></li>
-                                <li><a href="company.html#map">오시는 길</a></li>
+                                <li><a href="company.html#map">오시는길</a></li>
                             </ul>
                         </li>
                         <li class="item2">
-                            <a href="" class="dp1">교육서비스</a>
+                            <a href="biz.html" class="dp1">사업영역</a>
                             <ul class="sub">
-                                <li><a href="sev.html#text">교과서</a></li>
-                                <li><a href="sev.html#ref">참고서</a></li>
-                                <li><a href="sev.html#smart">스마트러닝</a></li>
-                                <li><a href="sev.html#edu">에듀테크</a></li>
-                                <li><a href="sev.html#char">캐릭터</a></li>
+                                <li><a href="biz.html#text">교과서</a></li>
+                                <li><a href="biz.html#ref">참고서</a></li>
+                                <li><a href="biz.html#smart">스마트교육</a></li>
+                                <li><a href="biz.html#edu">에듀테크</a></li>
                             </ul>
                         </li>
                         <li class="item3">
-                            <a href="" class="dp1">밀크T</a>
+                            <a href="social.html" class="dp1">사회공헌</a>
                             <ul class="sub">
-                                <li><a href="">서브01</a></li>
-                                <li><a href="">서브02</a></li>
-                                <li><a href="">서브03</a></li>
-                                <li><a href="">서브04</a></li>
+                                <li><a href="social.html#serve">학습봉사</a></li>
+                                <li><a href="social.html#support">지역사회후원</a></li>
+                                <li><a href="social.html#academy">학회지원</a></li>
+                                <li><a href="social.html#school">공교육지원</a></li>
                             </ul>
                         </li>
                         <li class="item4">
-                            <a href="" class="dp1">사회공헌</a>
+                            <a href="promotion.html" class="dp1">홍보</a>
                             <ul class="sub">
-                                <li><a href="society.html#edu">학습봉사</a></li>
-                                <li><a href="society.html#area">지역사회후원</a></li>
-                                <li><a href="society.html#academy">학회지원</a></li>
-                                <li><a href="society.html#school">공교육지원</a></li>
+                                <li><a href="promotion.html#news">언론보도</a></li>
+                                <li><a href="promotion.html#pr">광고</a></li>
+                                <li><a href="promotion.html#sns">SNS</a></li>
+                                <li><a href="promotion.html#story">천재이야기</a></li>
                             </ul>
                         </li>
                         <li class="item5">
-                            <a href="" class="dp1">브랜드</a>
+                            <a href="brand.html" class="dp1">브랜드</a>
                             <ul class="sub">
-                                <li><a href="">서브01</a></li>
-                                <li><a href="">서브02</a></li>
-                                <li><a href="">서브03</a></li>
-                                <li><a href="">서브04</a></li>
+                                <li><a href="brand.html#intro">브랜드 소개</a></li>
+                                <li><a href="brand.html#organizion">유관 기관</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -337,33 +327,33 @@ position:absolute; right:0; top: 0; border-bottom:1px solid #fff; transform-orig
             </script>
             <section class="page" id="page1">
                 <div class="page_wrap">
-                    <h2 class="page_tit">페이지 제목1</h2>
+                    <h2 class="page_tit">사회공헌</h2>
                     <ul class="pic_lst">
                         <li class="item1">
                             <a href="">
-                                <p class="pic_com">설명</p>
-                                <h3 class="pic_tit">제목</h3>
+                                <p class="pic_com">아이들에게 <br>용기와 희망을 전하는</p>
+                                <h3 class="pic_tit">학습봉사</h3>
                                 <span class="pic_arrow"></span>
                             </a>
                         </li>
                         <li class="item2">
                             <a href="">
-                                <p class="pic_com">설명</p>
-                                <h3 class="pic_tit">제목</h3>
+                                <p class="pic_com">모두가 행복한 <br>세상을 위한</p>
+                                <h3 class="pic_tit">지역사회 후원</h3>
                                 <span class="pic_arrow"></span>
                             </a>
                         </li>
                         <li class="item3">
                             <a href="">
-                                <p class="pic_com">설명</p>
-                                <h3 class="pic_tit">제목</h3>
+                                <p class="pic_com">미래교육 발전을 위한 <br>길에 동행하는</p>
+                                <h3 class="pic_tit">학회 지원</h3>
                                 <span class="pic_arrow"></span>
                             </a>
                         </li>
                         <li class="item4">
                             <a href="">
-                                <p class="pic_com">설명</p>
-                                <h3 class="pic_tit">제목</h3>
+                                <p class="pic_com">배움의 기회를 통해 <br>꿈을 키워갈 수 있는</p>
+                                <h3 class="pic_tit">공교육 지원</h3>
                                 <span class="pic_arrow"></span>
                             </a>
                         </li>
@@ -521,6 +511,5 @@ position:absolute; right:0; top: 0; border-bottom:1px solid #fff; transform-orig
     </div>
     <!-- 문서 위로 이동 -->
     <a href="#" class="totop">↑</a>
-
 </body>
 </html>
